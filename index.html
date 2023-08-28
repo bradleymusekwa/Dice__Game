@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-512/javascript-19-555546.png" type="image/x-icon">
+    <title>Dice Game</title>
+</head>
+<body>
+    <div class="game">
+        <div class="hearding">
+            <h1>Let's Play.</h1>
+        </div>
+        
+        <div class="container">
+            
+          <div id='dice1' class="dice dice-one">
+            <div id="dice-one-side-one" class='side one'>
+              <div class="dot one-1"></div>
+            </div>
+            <div id="dice-one-side-two" class='side two'>
+              <div class="dot two-1"></div>
+              <div class="dot two-2"></div>
+            </div>
+            <div id="dice-one-side-three" class='side three'>
+              <div class="dot three-1"></div>
+              <div class="dot three-2"></div>
+              <div class="dot three-3"></div>
+            </div>
+            <div id="dice-one-side-four" class='side four'>
+              <div class="dot four-1"></div>
+              <div class="dot four-2"></div>
+              <div class="dot four-3"></div>
+              <div class="dot four-4"></div>
+            </div>
+            <div id="dice-one-side-five" class='side five'>
+              <div class="dot five-1"></div>
+              <div class="dot five-2"></div>
+              <div class="dot five-3"></div>
+              <div class="dot five-4"></div>
+              <div class="dot five-5"></div>
+            </div>
+            <div id="dice-one-side-six" class='side six'>
+              <div class="dot six-1"></div>
+              <div class="dot six-2"></div>
+              <div class="dot six-3"></div>
+              <div class="dot six-4"></div>
+              <div class="dot six-5"></div>
+              <div class="dot six-6"></div>
+            </div>
+          </div>
+       </div>
+        <div class="container">
+          <div id='dice2' class="dice dice-two">
+            <div id="dice-two-side-one" class='side one'>
+              <div class="dot one-1"></div>
+            </div>
+            <div id="dice-two-side-two" class='side two'>
+              <div class="dot two-1"></div>
+              <div class="dot two-2"></div>
+            </div>
+            <div id="dice-two-side-three" class='side three'>
+              <div class="dot three-1"></div>
+              <div class="dot three-2"></div>
+              <div class="dot three-3"></div>
+            </div>
+            <div id="dice-two-side-four" class='side four'>
+              <div class="dot four-1"></div>
+              <div class="dot four-2"></div>
+              <div class="dot four-3"></div>
+              <div class="dot four-4"></div>
+            </div>
+            <div id="dice-two-side-five" class='side five'>
+              <div class="dot five-1"></div>
+              <div class="dot five-2"></div>
+              <div class="dot five-3"></div>
+              <div class="dot five-4"></div>
+              <div class="dot five-5"></div>
+            </div>
+            <div id="dice-two-side-six" class='side six'>
+              <div class="dot six-1"></div>
+              <div class="dot six-2"></div>
+              <div class="dot six-3"></div>
+              <div class="dot six-4"></div>
+              <div class="dot six-5"></div>
+              <div class="dot six-6"></div>
+            </div>
+          </div> 
+       </div>
+       <div id='roll' >
+        <button class='roll-button'><i class='bx bx-right-arrow-alt bx-fade-left' ></i>Roll dice!</button>
+        
+        </div>
+        <div class="container bottom">
+        <button class="btn"
+          onClick="editNames()">
+          <i class='bx bx-right-arrow-alt bx-fade-left' ></i>
+          Edit Names
+        </button>
+        </div>
+      </div>
+      <div class="playerTwo"><p class="player1">Player 1</p></div>
+      <section>
+        <div class="playerOne"><p class="player2">Player 2</p></div>
+      </section>
+      
+      
+      <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Audiowide", sans-serif;
+    height:100vh;
+    margin: 0;
+    --x: calc(var(--posX, 0) * 1px);
+    --y: calc(var(--posY, 0) * 1px);
+    background-image: 
+    linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+    radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
+    radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
+    radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+    radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
+    linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+    background-blend-mode: overlay, overlay, difference, difference, difference, normal
+  }
+
+  h1 {
+    color: #d0cccc;
+    position: relative;
+    top: 5rem;
+    right: 1rem;
+    text-align: center;
+    font-size: 2.5rem ;
+  }
+  
+  .roll-button {
+    position: relative;
+    top:80px;
+    padding: 15px 50px;
+    color: #d0cccc;
+    background: linear-gradient(60deg, rgb(000 200 255), rgb(020 175 125), rgb(000 010 255));
+    border: none;
+    font-family: "Audiowide", sans-serif;
+    font-size: 20px;
+    border-radius: 20px; 
+    box-shadow: 1px 3px #50514F;
+    outline: none;
+    transition: .5s; 
+  }
+  
+  .roll-button:hover, .roll-button:active {
+    outline: none;
+    background: #50514F;
+    cursor: pointer;
+    transform: translateY(15px); 
+  }
+  .btn {
+    position: relative;
+    top: 6.5rem;
+    padding: 15px 50px;
+    color: #d0cccc;
+    background: linear-gradient(60deg,rgb(120 086 255), rgb(000 010 255), rgb(022 000 045));
+    border: none;
+    font-family: "Audiowide", sans-serif;
+    font-size: 1rem;
+    border-radius: 20px; 
+    box-shadow: 1px 3px #50514F;
+    outline: none;
+    transition: .5s; 
+  }
+  .btn:hover, .btn:active {
+    outline: none;
+    background: #50514F;
+    cursor: pointer;
+    transform: translateY(15px); 
+  }
+  .player1{
+    color: #d0cccc;
+    position:relative;
+    right: 11.2rem;
+    top: 6.5rem;
+  } 
+
+  .player2 {
+    color: #d0cccc;
+    position: relative;
+    right: 3.5rem;
+    top: 6.5rem;
+  }
+  
+  .game {
+    position: relative;
+    width: auto;
+    height: 100%; 
+    left: 5rem;
+  }
+  
+  .container {
+    position: relative;
+    display: inline-block;
+    top: 200px;
+  }
+  
+  .dice {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transition: transform 1s; 
+  }
+  
+  .dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: -10px 5px 5px -10px;
+    border-radius: 20px;
+    background-color: rgb(022 000 045);
+    box-shadow: inset 2px 2px rgb(123, 0, 255);
+  }
+  
+  .dice-one {
+    position: absolute;
+    left: 150px; 
+  }
+  
+  .dice-two {
+    position: absolute;
+    left: -50px;
+    
+  }
+  
+  .side {
+    position: absolute;
+    background-color: rgb(90, 228, 249);
+    border-radius:5px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(90, 228, 249);
+    text-align: center;
+    line-height: 2em;
+  }
+  
+  .side:nth-child(1) {
+    transform: translateZ(3.1em); }
+  
+  .side:nth-child(6) {
+    transform: rotateY(90deg) translateZ(3.1em); }
+  
+  .side:nth-child(3) {
+    transform: rotateY(-90deg) translateZ(3.1em); }
+  
+  .side:nth-child(4) {
+    transform: rotateX(90deg) translateZ(3.1em); }
+  
+  .side:nth-child(5) {
+    transform: rotateX(-90deg) translateZ(3.1em); }
+  
+  .side:nth-child(2) {
+    transform: rotateY(-180deg) translateZ(3.1em); }
+  
+  .show-1 {
+    transform: rotateX(720deg) rotateZ(-720deg); }
+  
+  .show-6 {
+    transform: rotateX(-900deg) rotateZ(1080deg); }
+  
+  .show-3 {
+    transform: rotateY(-450deg) rotateZ(-1440deg); }
+  
+  .show-4 {
+    transform: rotateY(810deg) rotateZ(720deg); }
+  
+  .show-5 {
+    transform: rotateX(-810deg) rotateZ(-1080deg); }
+  
+  .show-2 {
+    transform: rotateX(450deg) rotateZ(-720deg); }
+  
+  .two-1, .three-1, .four-1, .five-1, .six-1 {
+    top: 20%;
+    left: 20%; 
+  }
+  
+  .four-3, .five-3, .six-4 {
+    top: 20%;
+    left: 80%; }
+  
+  .one-1, .three-2, .five-5 {
+    top: 50%;
+    left: 50%; }
+  
+  .four-2, .five-2, .six-3 {
+    top: 80%;
+    left: 20%; }
+  
+  .two-2, .three-3, .four-4, .five-4, .six-6 {
+    top: 80%;
+    left: 80%; }
+  
+  .six-2 {
+    top: 50%;
+    left: 20%; }
+  
+  .six-5 {
+    top: 50%;
+    left: 80%; 
+  
