@@ -49,9 +49,10 @@ body {
     cursor: pointer;
     transform: translateY(15px); 
   }
+
   .btn {
     position: relative;
-    top: 6.5rem;
+    top: 8.5rem;
     padding: 15px 50px;
     color: #d0cccc;
     background: linear-gradient(60deg,rgb(120 086 255), rgb(000 010 255), rgb(022 000 045));
@@ -69,18 +70,34 @@ body {
     cursor: pointer;
     transform: translateY(15px); 
   }
+
+
+  #play-again {
+    position: relative;
+    top: 4.5rem;
+    padding: 15px 50px;
+    color: #d0cccc;
+    background: linear-gradient(60deg,rgb(120 086 255), rgb(000 010 255), rgb(022 000 045));
+    border: none;
+    font-family: "Audiowide", sans-serif;
+    font-size: 1rem;
+    border-radius: 20px; 
+    box-shadow: 1px 3px #50514F;
+    outline: none;
+    transition: .5s; 
+  }
   .player1{
     color: #d0cccc;
     position:relative;
     right: 11.2rem;
-    top: 6.5rem;
+    top: 9.5rem;
   } 
 
   .player2 {
     color: #d0cccc;
     position: relative;
     right: 3.5rem;
-    top: 6.5rem;
+    top: 9.5rem;
   }
   
   .game {
@@ -110,8 +127,8 @@ body {
     height: 20px;
     margin: -10px 5px 5px -10px;
     border-radius: 20px;
-    background-color: rgb(022 000 045);
-    box-shadow: inset 2px 2px rgb(123, 0, 255);
+    background-color: rgb(54, 53, 54);
+    box-shadow: inset 2px 2px rgb(0, 0, 0);
   }
   
   .dice-one {
@@ -127,11 +144,11 @@ body {
   
   .side {
     position: absolute;
-    background-color: rgb(90, 228, 249);
+    background-color: rgb(255, 0, 0);
     border-radius:5px;
     width: 100px;
     height: 100px;
-    border: 1px solid rgb(90, 228, 249);
+    border: 1px solid rgb(255, 0, 0);
     text-align: center;
     line-height: 2em;
   }
@@ -200,4 +217,14 @@ body {
   .six-5 {
     top: 50%;
     left: 80%; 
-  
+  }
+
+  .winner-draw-text {
+    position: relative;
+    top: 4.5rem;
+    color: #d0cccc;
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(0, 0, 0);
+    
+  }
